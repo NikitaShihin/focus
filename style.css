@@ -1,0 +1,152 @@
+/* base style */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #434455;
+  background-color: #121212;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.mentors {
+}
+.container {
+  max-width: 1200px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* second section */
+
+.second-section {
+}
+.marquee {
+  overflow: hidden;
+  color: #bea69e;
+  font-family: DM Sans;
+  font-size: 59px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px; /* 108.475% */
+  letter-spacing: -1.18px;
+  text-transform: uppercase;
+}
+
+.marquee-accent {
+  color: #fff;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: -1.18px;
+  text-transform: uppercase;
+}
+.marquee-inner {
+  display: flex;
+  gap: 24px;
+}
+.marquee-line {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 10px 15px;
+  min-width: 100%;
+  white-space: nowrap;
+  animation-name: marquee-Line;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marquee-Line {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* five section */
+.title-mentors {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 54px; /* 112.5% */
+  letter-spacing: -1.92px;
+  margin-bottom: 50px;
+}
+.mentors-accent {
+  color: #bea69e;
+  font-family: DM Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 54px;
+  letter-spacing: -1.92px;
+}
+.mentors-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mentors-item {
+  flex-basis: calc((100% - 300px) / 3);
+}
+.mentors-picture {
+  border-radius: 200px;
+  background: var(
+    --avatar-user-square-liam-hood-neutral-background,
+    url(<path-to-image>),
+    lightgray 50% / cover no-repeat,
+    #e0e0e0
+  );
+}
+.mentors-caption {
+  color: #fff;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 114.286% */
+  margin-top: 16px;
+}
+.mentors-text {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.28px;
+}
